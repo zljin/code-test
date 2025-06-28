@@ -9,7 +9,7 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.zljin</groupId>
-	<artifactId>ct</artifactId>
+	<artifactId>code-test</artifactId>
 	<version>1.0.0</version>
 	<name>ct</name>
 	<description>The project for springboot</description>
