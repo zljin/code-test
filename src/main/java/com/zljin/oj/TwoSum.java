@@ -1,4 +1,4 @@
-package com.zljin.codes;
+package com.zljin.oj;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * https://leetcode.cn/problems/two-sum/description/
  */
-public class TwoSumDemo {
+public class TwoSum {
     public static void main(String[] args) {
 
     }
