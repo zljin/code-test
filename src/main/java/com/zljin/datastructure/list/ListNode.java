@@ -1,4 +1,4 @@
-package com.zljin.list;
+package com.zljin.datastructure.list;
 
 /**
  * @author leonard

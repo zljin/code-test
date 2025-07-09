@@ -1,4 +1,4 @@
-package com.zljin.graph;
+package com.zljin.datastructure.graph;
 
 import java.util.ArrayList;
 import java.util.List;

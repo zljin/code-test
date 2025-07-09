@@ -1,4 +1,4 @@
-package com.zljin.array;
+package com.zljin.datastructure.array;
 
 import java.util.Arrays;
 

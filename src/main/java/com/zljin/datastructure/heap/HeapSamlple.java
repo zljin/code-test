@@ -1,4 +1,4 @@
-package com.zljin.heap;
+package com.zljin.datastructure.heap;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

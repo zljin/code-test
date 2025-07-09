@@ -1,17 +1,17 @@
-package com.zljin.list;
+package com.zljin.datastructure.list;
 
 /**
  * @author leonard
  * @date 2022/6/15
  * @Description linkedList collection
  */
-public class LinkedList<E> {
+public class MyLinkedList<E> {
 
     private ListNode<E> dummyHead;
 
     private int size;
 
-    public LinkedList() {
+    public MyLinkedList() {
         this.dummyHead = new ListNode<>(null, null);
         this.size = 0;
     }
@@ -181,7 +181,7 @@ public class LinkedList<E> {
     }
 
     public static void main(String[] args) {
-        LinkedList<String> strList = new LinkedList<>();
+        MyLinkedList<String> strList = new MyLinkedList<>();
         strList.addFirst("jason");
         strList.addFirst("john");
         strList.addFirst("mike");

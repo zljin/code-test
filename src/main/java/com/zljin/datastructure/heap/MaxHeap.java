@@ -1,4 +1,4 @@
-package com.zljin.heap;
+package com.zljin.datastructure.heap;
 
 /**
  * todo study

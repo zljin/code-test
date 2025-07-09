@@ -1,4 +1,4 @@
-package com.zljin.tree;
+package com.zljin.datastructure.tree;
 
 /**
  * @author leonard

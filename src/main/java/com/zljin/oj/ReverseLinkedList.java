@@ -1,14 +1,14 @@
 package com.zljin.oj;
 
 
-import com.zljin.list.LinkedList;
+import com.zljin.datastructure.list.MyLinkedList;
 
 /**
  * https://leetcode.cn/problems/reverse-linked-list/
  */
 public class ReverseLinkedList {
     public static void main(String[] args) {
-        LinkedList<String> strList = new LinkedList<>();
+        MyLinkedList<String> strList = new MyLinkedList<>();
         strList.addLast("jason");
         strList.addLast("john");
         strList.addLast("mike");
