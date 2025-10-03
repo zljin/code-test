@@ -10,11 +10,13 @@ import org.springframework.stereotype.Component;
 @Component
 public class AuditLogAspect {
 
-    @Around("execution(* com.zljin.spring.service.*.*(..))")
+    @Around("execution(* com.zljin.spring.controller.*.*(..))")
     public Object logAround(ProceedingJoinPoint joinPoint) throws Throwable {
         System.out.println("执行方法前");
+        long start = System.currentTimeMillis();
         Object result = joinPoint.proceed();
         System.out.println("执行方法后");
+        System.out.println("方法执行时间: " + (System.currentTimeMillis() - start) + "ms");
         return result;
     }
 }
