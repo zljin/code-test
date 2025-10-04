@@ -1,4 +1,4 @@
-package com.zljin.javase.concurrent;
+package com.zljin.javase.concurrent.foobar;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;

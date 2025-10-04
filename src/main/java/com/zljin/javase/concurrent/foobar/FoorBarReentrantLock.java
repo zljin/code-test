@@ -1,15 +1,20 @@
-package com.zljin.javase.concurrent;
+package com.zljin.javase.concurrent.foobar;
 
+import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 两个线程交替打印 foo 和 bar
- * 使用 ReentrantLock 实现
+ * 使用 ReentrantLock lock() 实现
  */
 public class FoorBarReentrantLock {
 
     private static final Lock lockA = new ReentrantLock();
+
+    private static final Condition conditionA = lockA.newCondition();
+
+    boolean flag = true;
 
     private int times;
 
@@ -21,7 +26,12 @@ public class FoorBarReentrantLock {
         for (int i = 0; i < times; i++) {
             lockA.lock();
             try {
+                while(!flag){
+                    conditionA.await();
+                }
                 printFoo.run();
+                flag = false;
+                conditionA.signal();
             } finally {
                 lockA.unlock();
             }
@@ -32,7 +42,12 @@ public class FoorBarReentrantLock {
         for (int i = 0; i < times; i++) {
             lockA.lock();
             try {
+                while(flag){
+                    conditionA.await();
+                }
                 printBar.run();
+                flag = true;
+                conditionA.signal();
             } finally {
                 lockA.unlock();
             }

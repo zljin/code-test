@@ -4,9 +4,15 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 @EnableScheduling
 @Component
 public class ScheduledJob {
+
+    public static final ThreadLocal<SimpleDateFormat> dateFormatThreadLocal
+            = ThreadLocal.withInitial(() -> new SimpleDateFormat("yyyy-MM-dd hh:mm:ss"));
 
     //@Scheduled(fixedRate = 5000) //5s执行一次
     public void generateReport(){
@@ -19,8 +25,8 @@ public class ScheduledJob {
     }
 
     //10s执行一次
-    //@Scheduled(cron = "0/10 * * * * ?") //10s一次
+    @Scheduled(cron = "0/10 * * * * ?") //10s一次
     public void cronJob1(){
-        System.out.println("缓存刷新");
+        System.out.println(dateFormatThreadLocal.get().format(new Date()) + " 缓存刷新");
     }
 }
