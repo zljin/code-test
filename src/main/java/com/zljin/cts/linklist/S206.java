@@ -12,11 +12,11 @@ public class S206 {
     public ListNode reverseList(ListNode head) {
         ListNode pre = null;
         ListNode cur = head;
-        while(cur.next!=null){
-            ListNode tmp = cur.next;
+        while (cur != null) {
+            ListNode nextTag = cur.next;
             cur.next = pre;
             pre = cur;
-            cur = tmp;
+            cur = nextTag;
         }
         return pre;
     }
