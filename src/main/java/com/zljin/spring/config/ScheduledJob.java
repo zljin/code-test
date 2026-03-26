@@ -25,7 +25,7 @@ public class ScheduledJob {
     }
 
     //10s执行一次
-    @Scheduled(cron = "0/10 * * * * ?") //10s一次
+    //@Scheduled(cron = "0/10 * * * * ?") //10s一次
     public void cronJob1(){
         System.out.println(dateFormatThreadLocal.get().format(new Date()) + " 缓存刷新");
     }

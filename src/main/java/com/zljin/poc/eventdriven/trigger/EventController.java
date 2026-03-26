@@ -1,10 +1,10 @@
-package com.zljin.ooad.observer.trigger;
+package com.zljin.poc.eventdriven.trigger;
 
 
-import com.zljin.ooad.observer.events.DevEvent;
-import com.zljin.ooad.observer.events.ReleaseEvent;
-import com.zljin.ooad.observer.events.ReviewEvent;
-import com.zljin.ooad.observer.events.TestEvent;
+import com.zljin.poc.eventdriven.events.DevEvent;
+import com.zljin.poc.eventdriven.events.ReleaseEvent;
+import com.zljin.poc.eventdriven.events.ReviewEvent;
+import com.zljin.poc.eventdriven.events.TestEvent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.http.ResponseEntity;

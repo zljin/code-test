@@ -1,9 +1,9 @@
-package com.zljin.ooad.observer.listener;
+package com.zljin.poc.eventdriven.listener;
 
-import com.zljin.ooad.observer.events.DevEvent;
-import com.zljin.ooad.observer.events.ReleaseEvent;
-import com.zljin.ooad.observer.events.ReviewEvent;
-import com.zljin.ooad.observer.events.TestEvent;
+import com.zljin.poc.eventdriven.events.DevEvent;
+import com.zljin.poc.eventdriven.events.ReleaseEvent;
+import com.zljin.poc.eventdriven.events.ReviewEvent;
+import com.zljin.poc.eventdriven.events.TestEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.zljin.ooad.observer.events;
+package com.zljin.poc.eventdriven.events;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
