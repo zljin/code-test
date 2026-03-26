@@ -3,7 +3,7 @@ package com.zljin.javase.concurrent.aqs;
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**
- * 基于AQS
+ * 基于AQS实现互斥锁
  *
  * 核心思想：
  * 状态管理：使用AQS的状态(volatile int state)来表示锁的状态，0表示未锁定，1表示锁定。+ CAS

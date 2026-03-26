@@ -17,6 +17,7 @@ public class S225 {
         stack.push("b");
         stack.push("c");
 
+        //output: c b a
         while (!stack.isEmpty()) {
             System.out.print(stack.pop()+" ");
         }
@@ -29,6 +30,7 @@ public class S225 {
         queue.offer("B");
         queue.offer("C");
 
+        //output:  A B C
         while (!queue.isEmpty()) {
             System.out.print(queue.poll()+" ");
         }

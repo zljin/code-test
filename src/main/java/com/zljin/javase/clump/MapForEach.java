@@ -1,15 +1,15 @@
 package com.zljin.javase.clump;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Map的遍历
  */
 public class MapForEach {
     public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>();
+        Map<String, Integer> map = new ConcurrentHashMap<>();
         map.put("A", 1);
         map.put("B", 2);
         map.put("C", 3);

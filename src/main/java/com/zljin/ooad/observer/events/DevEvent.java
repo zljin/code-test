@@ -1,0 +1,14 @@
+package com.zljin.ooad.observer.events;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class DevEvent {
+
+    private String info;
+    private String eventType;
+}

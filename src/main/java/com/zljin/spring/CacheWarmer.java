@@ -1,4 +1,4 @@
-package com.zljin.spring.listener;
+package com.zljin.spring;
 
 import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.context.ApplicationListener;
