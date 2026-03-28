@@ -21,10 +21,10 @@ public class EventController {
 
     @GetMapping("/create")
     public ResponseEntity<String> createOrder() {
-        DevEvent event1 = new DevEvent("1", "phil");
-        ReviewEvent event2 = new ReviewEvent("2", "thomas");
-        TestEvent event3 = new TestEvent("3", "christy");
-        ReleaseEvent event4 = new ReleaseEvent("4", "evan");
+        DevEvent event1 = new DevEvent("mike", "DevEvent");
+        ReviewEvent event2 = new ReviewEvent("bob", "ReviewEvent");
+        TestEvent event3 = new TestEvent("tom", "TestEvent");
+        ReleaseEvent event4 = new ReleaseEvent("jerry", "ReleaseEvent");
         eventPublisher.publishEvent(event1);
         simulateCost();
 

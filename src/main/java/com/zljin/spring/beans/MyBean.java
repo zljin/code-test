@@ -1,8 +1,8 @@
 package com.zljin.spring.beans;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.InitializingBean;
 
-import javax.annotation.PostConstruct;
 
 /**
  *
